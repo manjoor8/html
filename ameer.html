@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameer Hasan Ansari - SAP Consultant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .resume-container {
+            max-width: 900px;
+            margin: 0px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: var(--primary-color);
+            color: white;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-right: 30px;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .contact-info a:hover {
+            color: var(--light-color);
+        }
+        
+        .section {
+            padding: 25px 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+        }
+        
+        .experience-item, .education-item, .certification-item {
+            margin-bottom: 5px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--dark-color);
+        }
+        
+        .item-date {
+            color: #777;
+            font-style: italic;
+        }
+        
+        .item-subtitle {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: var(--light-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .key-expertise {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        
+        .key-expertise h5 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .profile-pic {
+                margin: 0 auto 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .item-header {
+                flex-direction: column;
+            }
+            
+            .item-date {
+                margin-top: 5px;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section with Picture -->
+        <div class="header">
+            <img src="profile-picture.jpg" alt="Ameer Hasan Ansari" class="profile-pic">
+            <div class="header-content">
+                <h1>Ameer Hasan Ansari</h1>
+                <p>Senior SAP MM S/4HANA, EWM, IS-Retail Consultant</p>
+                <div class="contact-info">
+                    <a href="tel:+971567792055">
+                        <i class="fas fa-phone"></i> +971 567792055
+                    </a>
+                    <a href="mailto:amirbtech88@gmail.com">
+                        <i class="fas fa-envelope"></i> amirbtech88@gmail.com
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt"></i> Abu Dhabi, United Arab Emirates
+                    </a>
+                    <a href="https://www.linkedin.com/in/ameer-hasan-ansari-8b0b4a1b/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn </a>   
+                </div>
+            </div>
+        </div>
+        
+        <!-- Summary Section -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-user-tie"></i> Career Summary
+            </div>
+            <p>
+                Senior SAP MM S4 HANA Consultant with over 13 years of experience delivering end-to-end SAP MM solutions across 
+                diverse industries including retail, healthcare and manufacturing. Skilled in core MM processes, IS-Retail, 
+                EWM and integrations with SD, PP and FI modules. Proven expertise in business process mapping, data migration 
+                and user training. Currently based in Abu Dhabi on <strong>freelance visa </strong> &amp; open to immediate opportunity.
+            </p>
+            
+            <div class="key-expertise">
+                <h5>Key Expertise:</h5>
+                <ul>
+                    <li><strong>SAP Implementation & Integration:</strong> Led end-to-end implementations of SAP S/4HANA MM module, from requirements gathering to post-go-live support.</li>
+                    <li><strong>S/4HANA Migration & Upgrades:</strong> Spearheaded multiple S/4HANA migration projects from legacy SAP ERP systems.</li>
+                    <li><strong>Customization & Enhancement:</strong> Implemented solutions using SAP ABAP programming to extend standard functionalities.</li>
+                    <li><strong>Integration Expertise:</strong> Proficient in integrating SAP MM/SD modules with FI/CO, PP, and WM modules.</li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-code"></i> Core Competencies
+            </div>
+            
+            <div class="skills-list">
+                <span class="skill">SAP S/4HANA MM & SD Implementation</span>
+                <span class="skill">IS-Retail Configuration</span>
+                <span class="skill">EWM Integration </span>
+                <span class="skill">Procurement & Inventory Management  </span>        
+                <span class="skill">Business Process Optimization  </span>
+                <span class="skill">Data Migration (LSMW, LTMC) </span>
+                <span class="skill">Material Master & Business Partner Config </span>       
+                <span class="skill">Cross-Module Integration (FI/CO, PP, SD)  </span>
+                <span class="skill">Project Management & Team Leadership  </span>
+                <span class="skill">End-user Training & Documentation </span>                
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-briefcase"></i> Employement History
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Senior SAP S/4HANA MM, SD Consultant</div>
+                    <div class="item-date">Oct 2023 – Present</div>
+                </div>
+                <div class="item-subtitle">Arch Technologies LLC, Dubai, UAE</div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Manager Projects, MM, EWM, IS-Retail</div>
+                    <div class="item-date">Aug 2021 – Mar 2023</div>
+                </div>
+                <div class="item-subtitle">Cognizant Technologies, Bangalore, India</div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">SAP MM S/4HANA, EWM Consultant</div>
+                    <div class="item-date">Jan 2019 – May 2021</div>
+                </div>
+                <div class="item-subtitle">Marlabs Innovations Pvt Ltd, Bangalore, India</div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">SAP MM Consultant</div>
+                    <div class="item-date">July 2014 – Jan 2019</div>
+                </div>
+                <div class="item-subtitle">Infosys, Bangalore, India</div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Associate Consultant MM</div>
+                    <div class="item-date">Nov 2012 – Apr 2014</div>
+                </div>
+                <div class="item-subtitle">Right Query Technologies Pvt. Ltd, India</div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">SAP End user</div>
+                    <div class="item-date">May 2011 – Aug 2012</div>
+                </div>
+                <div class="item-subtitle">Yell Adworks India Pvt Ltd, Bangalore, India</div>
+            </div>
+        </div>
+        
+        <!-- Career Highlights Section -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-star"></i> Career Highlights
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Senior SAP S/4HANA MM, SD Consultant</div>
+                    <div class="item-date">Butjeel Holdings, Abu Dhabi, UAE</div>
+                </div>
+                <h6>Job Responsibilities:</h6>
+                <ul>
+                    <li>Leading implementation, customization, and configuration of SAP S/4HANA MM and SD modules</li>
+                    <li>Collaborating with cross-functional teams to gather business requirements</li>
+                    <li>Conducting comprehensive analysis of business processes for optimization</li>
+                    <li>Managing project timelines, resource allocation, and deliverables</li>
+                    <li>Providing training and support to junior consultants and end-users</li>
+                    <li>Coordinating with other SAP module consultants for seamless integration</li>
+                </ul>
+                
+                <h6>Key Achievements at Cognizant Technologies:</h6>
+                <ul>
+                    <li>Configured the MM S4 HANA, IS-Retail module to meet client requirements</li>
+                    <li>Played pivotal role in configuring procurement process during SAP S/4 HANA and Fiori 2.0 realization</li>
+                    <li>Experience in recycling domain, scrap procurement, waste management</li>
+                    <li>Configured SAP EWM including warehouse structure setup and bin management</li>
+                    <li>Automated store replenishment and planning</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Education Section -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-graduation-cap"></i> Education
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Master of Business Administration (MBA) – E-Business</div>
+                </div>
+                <div class="item-subtitle">Annamalai University, India</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Bachelor of Technology (B.Tech)</div>
+                </div>
+                <div class="item-subtitle">JNTU Hyderabad, India</div>
+            </div>
+        </div>
+        
+        <!-- Certifications Section -->
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-certificate"></i> Certifications
+            </div>
+            <ul>
+                <li>SAP MM S/4HANA Sourcing and Procurement 2022 version</li>
+                <li>SAP S/4HANA Cloud Private Addition, Extended Warehouse Management</li>
+                <li>Putting AI Ethics into Practice at SAP</li>
+                <li>Business Acumen for Project Managers</li>
+                <li>Project Management: Preventing Scope Creep</li>
+                <li>Introducing SAP Cloud Identity Services</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
